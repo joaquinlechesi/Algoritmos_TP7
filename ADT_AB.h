@@ -57,7 +57,7 @@ itemAB RAIZ(AB T){
     }
     else
     {
-        return '@';
+        return indefinido;
     }
 }
 
