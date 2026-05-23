@@ -26,3 +26,21 @@ AB ARMARAB(AB I, itemAB r, AB D){
 bool ESABVACIO(AB T){
     return T == NULL;
 }
+
+bool PERTENECE(AB T, itemAB x){
+    if (ESABVACIO(T))
+    {
+        return false;
+    }
+    else
+    {
+        if (T->raiz == x)
+        {
+            return true;
+        }
+        else
+        {
+            return PERTENECE(T->izq, x) || PERTENECE(T->der, x);
+        }
+    }
+}
