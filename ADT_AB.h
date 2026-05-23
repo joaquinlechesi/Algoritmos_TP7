@@ -44,3 +44,13 @@ bool PERTENECE(AB T, itemAB x){
         }
     }
 }
+
+AB IZQUIERDO(AB T){
+    return T->izq;
+}
+
+
+
+// AB DERECHO(AB T){
+//     return T->der;
+// }
