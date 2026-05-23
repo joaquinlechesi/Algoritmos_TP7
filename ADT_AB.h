@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 typedef char itemAB;
+const itemAB indefinido = '@';
 
 struct nodoAB{
     itemAB raiz;
