@@ -60,6 +60,6 @@ itemAB RAIZ(AB T){
     }
 }
 
-// AB DERECHO(AB T){
-//     return T->der;
-// }
+AB DERECHO(AB T){
+    return T->der;
+}
