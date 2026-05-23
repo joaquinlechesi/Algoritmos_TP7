@@ -49,7 +49,16 @@ AB IZQUIERDO(AB T){
     return T->izq;
 }
 
-
+itemAB RAIZ(AB T){
+    if (T == NULL)
+    {
+        return T->raiz;
+    }
+    else
+    {
+        return '@';
+    }
+}
 
 // AB DERECHO(AB T){
 //     return T->der;
