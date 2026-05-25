@@ -16,15 +16,34 @@ int main()
         puts("No.");
     }
     printf("Uso la operacion RAIZ en 'T1' para mostrar el item: %c\n", RAIZ(T1));
-    puts("Defino dos arboles AB, uno llamado 'I' con el item llamado B y otro llamado 'D' con el item llamado F.\nTambien defino un nuevo itemAB 'r' con el valor 'a'");
+    puts("Defino dos arboles AB, uno llamado 'I' con el item llamado B y otro como AB vacio.\nTambien defino un nuevo itemAB 'r' con el valor 'a'");
     AB I = ARMARAB(ABVACIO(), 'B', ABVACIO());
-    AB D = ARMARAB(ABVACIO(), 'F', ABVACIO());
+    AB D = ABVACIO();
     itemAB r = 'a';
     puts("Agrego ambos arboles y el item a 'T1'");
     puts("'T1 = ARMARAB(I, r, D)'");
     T1 = ARMARAB(I, r, D);
     puts("Es 'T1' arbol vacio?");
     if (ESABVACIO(T1))
+    {
+        puts("Si.");
+    }
+    else
+    {
+        puts("No.");
+    }
+    printf("Uso la operacion RAIZ en 'T1' para mostrar el item: %c\n", RAIZ(T1));
+    puts("Es IZQUIERDO de 'T1' arbol vacio?");
+    if (ESABVACIO(IZQUIERDO(T1)))
+    {
+        puts("Si.");
+    }
+    else
+    {
+        puts("No.");
+    }
+    puts("Es DERECHO de 'T1' arbol vacio?");
+    if (ESABVACIO(DERECHO(T1)))
     {
         puts("Si.");
     }
