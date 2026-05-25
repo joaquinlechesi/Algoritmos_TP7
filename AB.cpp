@@ -15,9 +15,10 @@ int main()
     {
         puts("No.");
     }
-    puts("Defino dos arboles AB, uno llamado 'I' y otro llamado 'D'. Tambien defino un nuevo itemAB 'r' con el valor 'a'");
-    AB I = ABVACIO();
-    AB D = ABVACIO();
+    printf("Uso la operacion RAIZ en 'T1' para mostrar el item: %c\n", RAIZ(T1));
+    puts("Defino dos arboles AB, uno llamado 'I' con el item llamado B y otro llamado 'D' con el item llamado F.\nTambien defino un nuevo itemAB 'r' con el valor 'a'");
+    AB I = ARMARAB(ABVACIO(), 'B', ABVACIO());
+    AB D = ARMARAB(ABVACIO(), 'F', ABVACIO());
     itemAB r = 'a';
     puts("Agrego ambos arboles y el item a 'T1'");
     puts("'T1 = ARMARAB(I, r, D)'");
