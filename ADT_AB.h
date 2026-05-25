@@ -51,7 +51,7 @@ AB IZQUIERDO(AB T){
 }
 
 itemAB RAIZ(AB T){
-    if (T == NULL)
+    if (T != NULL)
     {
         return T->raiz;
     }
