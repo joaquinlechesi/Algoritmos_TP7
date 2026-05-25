@@ -47,7 +47,14 @@ bool PERTENECE(AB T, itemAB x){
 }
 
 AB IZQUIERDO(AB T){
-    return T->izq;
+    if (T != NULL)
+    {
+        return T->izq;
+    }
+    else
+    {
+        return NULL;
+    }
 }
 
 itemAB RAIZ(AB T){
@@ -62,5 +69,12 @@ itemAB RAIZ(AB T){
 }
 
 AB DERECHO(AB T){
-    return T->der;
+    if (T != NULL)
+    {
+        return T->der;
+    }
+    else
+    {
+        return NULL;
+    }
 }
