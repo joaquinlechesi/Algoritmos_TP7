@@ -78,3 +78,23 @@ AB DERECHO(AB T){
         return NULL;
     }
 }
+
+bool IGUALES(AB arbol1, AB arbol2){
+    if (ESABVACIO(arbol1) && ESABVACIO(arbol2))
+    {
+        return true;
+    }
+    else
+    {
+        if (!ESABVACIO(arbol1) && !ESABVACIO(arbol2))
+        {
+            return RAIZ(arbol1) == RAIZ(arbol2) && IGUALES(IZQUIERDO(arbol1), IZQUIERDO(arbol2)) && IGUALES(DERECHO(arbol1), DERECHO(arbol2));
+        }
+        else
+        {
+            return false;
+        }
+        
+    }
+    
+}
