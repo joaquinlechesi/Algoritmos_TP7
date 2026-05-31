@@ -20,7 +20,7 @@ int main()
     AB I = ARMARAB(ABVACIO(), 'B', ABVACIO());
     AB D = ABVACIO();
     itemAB r = 'a';
-    puts("Agrego ambos arboles y el item a 'T1'");
+    puts("Agrego ambos arboles y el item 'a' al AB 'T1'");
     puts("'T1 = ARMARAB(I, r, D)'");
     T1 = ARMARAB(I, r, D);
     puts("Es 'T1' arbol vacio?");
