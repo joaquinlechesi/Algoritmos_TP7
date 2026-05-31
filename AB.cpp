@@ -1,5 +1,7 @@
 #include "ADT_AB.h"
 
+bool estaLleno(AB arbol1);
+
 int main()
 {
     puts("ADT AB");
@@ -51,6 +53,28 @@ int main()
     {
         puts("No.");
     }
+    puts("Uso la funcion 'estaLleno' en con el 'T1'");
+    puts("Es 'T1' un arbol binario lleno?");
+    if (estaLleno(T1))
+    {
+        puts("Si.");
+    }else
+    {
+        puts("No.");
+    }
+    puts("Defino un nuevo arbol binario llamado 'T2'");
+    AB T2;
+    T2 = ABVACIO();
+    puts("Agrego a IZQUIERDO de 'T2' un arbol binario no vacio, a DERECHO de 'T2' un arbol binario no vacio y un item '*'");
+    T2 = ARMARAB(ARMARAB(ABVACIO(), '1', ABVACIO()), '*', ARMARAB(ABVACIO(), '2', ABVACIO()));
+    puts("Es 'T2' un arbol binario lleno?");
+    if (estaLleno(T2))
+    {
+        puts("Si.");
+    }else
+    {
+        puts("No.");
+    }
     
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
@@ -72,7 +96,7 @@ bool estaLleno(AB arbol1){
         }
         else
         {
-            return estaLleno(IZQUIERDO(arbol1)) || estaLleno(DERECHO(arbol1));
+            return estaLleno(IZQUIERDO(arbol1)) && estaLleno(DERECHO(arbol1));
         }
     }
 }
