@@ -57,3 +57,22 @@ int main()
     getchar();
     return 0;
 }
+
+//2 funcion recursiva como usuario 'estaLleno'
+bool estaLleno(AB arbol1){
+    if (ESABVACIO(arbol1) || (ESABVACIO(IZQUIERDO(arbol1)) && ESABVACIO(DERECHO(arbol1))))
+    {
+        return true;
+    }
+    else
+    {
+        if (ESABVACIO(IZQUIERDO(arbol1)) || ESABVACIO(DERECHO(arbol1)))
+        {
+            return false;
+        }
+        else
+        {
+            return estaLleno(IZQUIERDO(arbol1)) || estaLleno(DERECHO(arbol1));
+        }
+    }
+}
