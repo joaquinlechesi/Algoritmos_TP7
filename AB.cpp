@@ -90,13 +90,13 @@ bool estaLleno(AB arbol1){
     }
     else
     {
-        if (ESABVACIO(IZQUIERDO(arbol1)) || ESABVACIO(DERECHO(arbol1)))
+        if (!ESABVACIO(IZQUIERDO(arbol1)) && !ESABVACIO(DERECHO(arbol1)))
         {
-            return false;
+            return estaLleno(IZQUIERDO(arbol1)) && estaLleno(DERECHO(arbol1));
         }
         else
         {
-            return estaLleno(IZQUIERDO(arbol1)) && estaLleno(DERECHO(arbol1));
+            return false;
         }
     }
 }
