@@ -75,7 +75,28 @@ int main()
     {
         puts("No.");
     }
-    
+    puts("Uso la operacion 'IGUALES' con los arboles 'T1' y 'T2'");
+    puts("Los arboles 'T1' y 'T2' son iguales?");
+    if (IGUALES(T1, T2))
+    {
+        puts("Si.");
+    }else
+    {
+        puts("No.");
+    }
+    puts("Defino un nuevo arbol llamado 'T3' (igual a 'T1')");
+    AB T3 = ABVACIO();
+    T3 = T1 = ARMARAB(I, r, D);
+    puts("Uso la operacion 'IGUALES' con los arboles 'T1' y 'T3'");
+    puts("Los arboles 'T1' y 'T3' son iguales?");
+    if (IGUALES(T1, T3))
+    {
+        puts("Si.");
+    }else
+    {
+        puts("No.");
+    }
+
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
     getchar();
