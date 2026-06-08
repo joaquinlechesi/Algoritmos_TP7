@@ -129,13 +129,13 @@ int ALTURA(AB arbol1){ //FUNCION RECURSIVA QUE NECESITA SER INICALIZADA CON UN V
             int maximo, a, b;
             a = 1 + ALTURA(IZQUIERDO(arbol1));
             b = 1 + ALTURA(DERECHO(arbol1));
-            if (a > b)
+            if (a >= b)
             {
-                maximo = b;
+                maximo = a;
             }
             else
             {
-                maximo = a;
+                maximo = b;
             }
             return maximo;
         }

@@ -96,6 +96,13 @@ int main()
     {
         puts("No.");
     }
+    puts("Uso la operacion 'ALTURA'");
+    printf("La altura del arbol 'T1' es: %d\n", ALTURA(T1));
+    printf("La altura del arbol 'T2' es: %d\n", ALTURA(T2));
+    puts("Defino un nuevo arbol 'T3'.");
+    puts("'AB T4 = ARMARAB(ARMARAB(ABVACIO(), '1', ABVACIO()), '*', ARMARAB(ABVACIO(), '2', ARMARAB(ABVACIO(), '3', ABVACIO())))'");
+    AB T4 = ARMARAB(ARMARAB(ABVACIO(), '1', ABVACIO()), '*', ARMARAB(ABVACIO(), '2', ARMARAB(ABVACIO(), '3', ABVACIO())));
+    printf("La altura del arbol 'T4' es: %d\n", ALTURA(T4));
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
