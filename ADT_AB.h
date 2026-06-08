@@ -116,3 +116,45 @@ AB PODARHOJAS(AB arblol1){
         }
     }
 }
+
+int ALTURA(AB arbol1){ //FUNCION RECURSIVA QUE NECESITA SER INICALIZADA CON UN VALOR ANTERIOR
+    if (ESABVACIO(arbol1))
+    {
+        return 0;
+    }
+    else
+    {
+        if (!ESABVACIO(IZQUIERDO(arbol1)) || !ESABVACIO(DERECHO(arbol1)))
+        {
+            int maximo, a, b;
+            a = 1 + ALTURA(IZQUIERDO(arbol1));
+            b = 1 + ALTURA(DERECHO(arbol1));
+            if (a > b)
+            {
+                maximo = b;
+            }
+            else
+            {
+                maximo = a;
+            }
+            return maximo;
+        }
+        else
+        {
+            return 1;
+        }
+        
+    }
+    
+}
+
+// bool ESBALANCEADO(AB arbol1){
+//     if (ESABVACIO(arbol1))
+//     {
+//         return true;
+//     }
+//     else
+//     {
+        
+//     }
+// }
