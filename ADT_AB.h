@@ -98,3 +98,21 @@ bool IGUALES(AB arbol1, AB arbol2){
     }
     
 }
+
+AB PODARHOJAS(AB arblol1){
+    if (ESABVACIO(arblol1))
+    {
+        return ABVACIO();
+    }
+    else
+    {
+        if (ESABVACIO(IZQUIERDO(arblol1)) && ESABVACIO(DERECHO(arblol1)))
+        {
+            return ABVACIO();
+        }
+        else
+        {
+            return ARMARAB(PODARHOJAS(IZQUIERDO(arblol1)), RAIZ(arblol1), PODARHOJAS(DERECHO(arblol1)));
+        }
+    }
+}
