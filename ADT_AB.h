@@ -117,7 +117,7 @@ AB PODARHOJAS(AB arblol1){
     }
 }
 
-int ALTURA(AB arbol1){ //FUNCION RECURSIVA QUE NECESITA SER INICALIZADA CON UN VALOR ANTERIOR
+int ALTURA(AB arbol1){
     if (ESABVACIO(arbol1))
     {
         return 0;
@@ -148,13 +148,21 @@ int ALTURA(AB arbol1){ //FUNCION RECURSIVA QUE NECESITA SER INICALIZADA CON UN V
     
 }
 
-// bool ESBALANCEADO(AB arbol1){
-//     if (ESABVACIO(arbol1))
-//     {
-//         return true;
-//     }
-//     else
-//     {
+bool ESBALANCEADO(AB arbol1){
+    if (ESABVACIO(arbol1))
+    {
+        return true;
+    }
+    else
+    {
+        if (-1 <= (ALTURA(IZQUIERDO(arbol1)) - ALTURA(DERECHO(arbol1))) && (ALTURA(IZQUIERDO(arbol1)) - ALTURA(DERECHO(arbol1))) <= 1)
+        {
+            return ESBALANCEADO(IZQUIERDO(arbol1)) && ESBALANCEADO(DERECHO(arbol1));
+        }
+        else
+        {
+            return false;
+        }
         
-//     }
-// }
+    }
+}
