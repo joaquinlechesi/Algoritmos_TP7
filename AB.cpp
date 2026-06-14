@@ -3,6 +3,7 @@
 bool estaLleno(AB arbol1);
 void preOrden(AB T1);
 void enOrden(AB T1);
+void postOrden(AB T1);
 
 int main()
 {
@@ -154,5 +155,14 @@ void enOrden(AB T1){
         enOrden(IZQUIERDO(T1));
         printf(" %c ", RAIZ(T1));
         enOrden(DERECHO(T1));
+    }
+}
+
+void postOrden(AB T1){
+    if (!ESABVACIO(T1))
+    {
+        postOrden(IZQUIERDO(T1));
+        postOrden(DERECHO(T1));
+        printf(" %c ", RAIZ(T1));
     }
 }
