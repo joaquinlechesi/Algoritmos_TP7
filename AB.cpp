@@ -116,7 +116,21 @@ int main()
     enOrden(T4);
     puts("\nUso la funcion 'postOrden' para listar 'T4' en orden previo:");
     postOrden(T4);
-
+    // AB Tj = ARMARAB(ABVACIO(), 'J', ABVACIO());
+    // AB Th = ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO()));
+    // AB Ti = ARMARAB(ABVACIO(), 'I', ABVACIO());
+    // AB Te = ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()));
+    // AB Td = ARMARAB(ABVACIO(), 'D', ABVACIO());
+    // AB Tb = ARMARAB(ABVACIO(), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO())));
+    //
+    // AB Tg = ARMARAB(ABVACIO(), 'G', ABVACIO());
+    // AB Tf = ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO()));
+    // AB Tc = ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO());
+    //
+    puts("Defino un nuevo arbol 'abTeoria':");
+    puts("'AB abTeoria = ARMARAB(ARMARAB(ABVACIO(), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()))'");
+    AB abTeoria = ARMARAB(ARMARAB(ABVACIO(), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()));
+    
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
     getchar();
