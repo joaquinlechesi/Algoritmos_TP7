@@ -114,6 +114,8 @@ int main()
     preOrden(T4);
     puts("\nUso la funcion 'enOrden' para listar 'T4' en orden previo:");
     enOrden(T4);
+    puts("\nUso la funcion 'postOrden' para listar 'T4' en orden previo:");
+    postOrden(T4);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
