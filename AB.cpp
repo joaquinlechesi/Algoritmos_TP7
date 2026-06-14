@@ -134,6 +134,8 @@ int main()
     preOrden(abTeoria);
     puts("\nUso la funcion 'enOrden' para listar 'abTeoria' en orden previo:");
     enOrden(abTeoria);
+    puts("\nUso la funcion 'postOrden' para listar 'abTeoria' en orden previo:");
+    postOrden(abTeoria);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
