@@ -132,10 +132,19 @@ int main()
     AB abTeoria = ARMARAB(ARMARAB(ARMARAB(ABVACIO(), 'D', ABVACIO()), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()));
     puts("Uso la funcion 'preOrden' para listar 'abTeoria' en orden previo:");
     preOrden(abTeoria);
-    puts("\nUso la funcion 'enOrden' para listar 'abTeoria' en orden previo:");
+    puts("\nUso la funcion 'enOrden' para listar 'abTeoria' en orden simetico:");
     enOrden(abTeoria);
-    puts("\nUso la funcion 'postOrden' para listar 'abTeoria' en orden previo:");
+    puts("\nUso la funcion 'postOrden' para listar 'abTeoria' en orden posterior:");
     postOrden(abTeoria);
+    // puts("Uso la operacion 'PODARHOJAS' con 'abTeoria'");
+    // abTeoria = PODARHOJAS(abTeoria);
+    // puts("'abTeoria = PODARHOJAS(abTeoria)'");
+    // puts("Uso la funcion 'preOrden' para listar 'abTeoria' en orden previo:");
+    // preOrden(abTeoria);
+    // puts("\nUso la funcion 'enOrden' para listar 'abTeoria' en orden simetrico:");
+    // enOrden(abTeoria);
+    // puts("\nUso la funcion 'postOrden' para listar 'abTeoria' en orden posterior:");
+    // postOrden(abTeoria);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
