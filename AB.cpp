@@ -128,9 +128,11 @@ int main()
     // AB Tc = ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO());
     //
     puts("Defino un nuevo arbol 'abTeoria':");
-    puts("'AB abTeoria = ARMARAB(ARMARAB(ABVACIO(), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()))'");
-    AB abTeoria = ARMARAB(ARMARAB(ABVACIO(), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()));
-    
+    puts("'AB abTeoria = ARMARAB(ARMARAB(ARMARAB(ABVACIO(), 'D', ABVACIO()), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()))'");
+    AB abTeoria = ARMARAB(ARMARAB(ARMARAB(ABVACIO(), 'D', ABVACIO()), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()));
+    puts("Uso la funcion 'preOrden' para listar 'T4' en orden previo:");
+    preOrden(abTeoria);
+
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
     getchar();
