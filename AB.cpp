@@ -130,8 +130,10 @@ int main()
     puts("Defino un nuevo arbol 'abTeoria':");
     puts("'AB abTeoria = ARMARAB(ARMARAB(ARMARAB(ABVACIO(), 'D', ABVACIO()), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()))'");
     AB abTeoria = ARMARAB(ARMARAB(ARMARAB(ABVACIO(), 'D', ABVACIO()), 'B', ARMARAB(ARMARAB(ABVACIO() , 'H', ARMARAB(ABVACIO(), 'J', ABVACIO())), 'E', ARMARAB(ABVACIO(), 'I', ABVACIO()))), 'A', ARMARAB(ARMARAB(ABVACIO(), 'F', ARMARAB(ABVACIO(), 'G', ABVACIO())), 'C', ABVACIO()));
-    puts("Uso la funcion 'preOrden' para listar 'T4' en orden previo:");
+    puts("Uso la funcion 'preOrden' para listar 'abTeoria' en orden previo:");
     preOrden(abTeoria);
+    puts("\nUso la funcion 'enOrden' para listar 'abTeoria' en orden previo:");
+    enOrden(abTeoria);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
