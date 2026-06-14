@@ -104,13 +104,15 @@ int main()
     puts("Defino un nuevo arbol 'T3'.");
     AB T8 = ARMARAB(ABVACIO(), '8', ABVACIO());
     AB T7 = ARMARAB(ABVACIO(), '7', ABVACIO());
-    AB T6 = ARMARAB(T7, '6', T8);
-    AB T5 = ARMARAB(ABVACIO(), '5', ABVACIO());
+    AB T6 = ARMARAB(ABVACIO(), '6', T8);
+    AB T5 = ARMARAB(ABVACIO(), '5', T7);
     AB T4 = ARMARAB(T5, '4', T6);
     puts("'AB T4 = ARMARAB(T5, '4', T6)'");
     printf("La altura del arbol 'T4' es: %d\n", ALTURA(T4));
     puts("Uso la funcion 'preOrden' para listar 'T4' en orden previo:");
     preOrden(T4);
+    puts("\nUso la funcion 'enOrden' para listar 'T4' en orden previo:");
+    enOrden(T4);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
