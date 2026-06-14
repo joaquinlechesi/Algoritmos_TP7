@@ -166,3 +166,13 @@ bool ESBALANCEADO(AB arbol1){
         
     }
 }
+
+//EXTRA
+void liberarAB(AB T1){
+    if (!ESABVACIO(T1))
+    {
+        IZQUIERDO(T1);
+        DERECHO(T1);
+        delete(T1);
+    }
+}
