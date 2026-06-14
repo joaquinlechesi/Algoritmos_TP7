@@ -101,9 +101,15 @@ int main()
     printf("La altura del arbol 'T1' es: %d\n", ALTURA(T1));
     printf("La altura del arbol 'T2' es: %d\n", ALTURA(T2));
     puts("Defino un nuevo arbol 'T3'.");
-    puts("'AB T4 = ARMARAB(ARMARAB(ABVACIO(), '1', ABVACIO()), '*', ARMARAB(ABVACIO(), '2', ARMARAB(ABVACIO(), '3', ABVACIO())))'");
-    AB T4 = ARMARAB(ARMARAB(ABVACIO(), '1', ABVACIO()), '*', ARMARAB(ABVACIO(), '2', ARMARAB(ABVACIO(), '3', ABVACIO())));
+    AB T8 = ARMARAB(ABVACIO(), '8', ABVACIO());
+    AB T7 = ARMARAB(ABVACIO(), '7', ABVACIO());
+    AB T6 = ARMARAB(T7, '6', T8);
+    AB T5 = ARMARAB(ABVACIO(), '5', ABVACIO());
+    AB T4 = ARMARAB(T5, '4', T6);
+    puts("'AB T4 = ARMARAB(T5, '4', T6)'");
     printf("La altura del arbol 'T4' es: %d\n", ALTURA(T4));
+    puts("Uso la funcion 'preOrden' para listar 'T4' en orden previo:");
+    preOrden(T4);
 
     puts("\nPresione la tecla enter para finalizar.");
     fflush(stdin);
@@ -133,7 +139,7 @@ bool estaLleno(AB arbol1){
 void preOrden(AB T1){
     if (!ESABVACIO(T1))
     {
-        printf("%c", RAIZ(T1));
+        printf(" %c ", RAIZ(T1));
         preOrden(IZQUIERDO(T1));
         preOrden(DERECHO(T1));
     }
