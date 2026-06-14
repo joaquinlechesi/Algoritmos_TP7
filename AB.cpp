@@ -1,6 +1,7 @@
 #include "ADT_AB.h"
 
 bool estaLleno(AB arbol1);
+void preOrden(AB T1);
 
 int main()
 {
@@ -126,5 +127,14 @@ bool estaLleno(AB arbol1){
         {
             return false;
         }
+    }
+}
+
+void preOrden(AB T1){
+    if (!ESABVACIO(T1))
+    {
+        printf("%c", RAIZ(T1));
+        preOrden(IZQUIERDO(T1));
+        preOrden(DERECHO(T1));
     }
 }
