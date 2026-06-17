@@ -108,6 +108,7 @@ AB PODARHOJAS(AB arblol1){
     {
         if (ESABVACIO(IZQUIERDO(arblol1)) && ESABVACIO(DERECHO(arblol1)))
         {
+            liberarAB(arblol1);
             return ABVACIO();
         }
         else
@@ -171,8 +172,8 @@ bool ESBALANCEADO(AB arbol1){
 void liberarAB(AB T1){
     if (!ESABVACIO(T1))
     {
-        IZQUIERDO(T1);
-        DERECHO(T1);
+        liberarAB(IZQUIERDO(T1));
+        liberarAB(DERECHO(T1));
         delete(T1);
     }
 }
